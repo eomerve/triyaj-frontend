@@ -28,7 +28,25 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -47,6 +65,7 @@
     <script src="assets/js/demo/chart-area-demo.js"></script>
     <script src="assets/js/demo/chart-pie-demo.js"></script>
 
-<script src="runtime.f43a9439a7fb232d.js" type="module"></script><script src="polyfills.01fe3a8fd0796735.js" type="module"></script><script src="scripts.1d88a278c80d3bb3.js" defer></script><script src="main.49e17e00f714dd6e.js" type="module"></script>
+<script src="runtime.f43a9439a7fb232d.js" type="module"></script><script src="polyfills.01fe3a8fd0796735.js" type="module"></script><script src="scripts.1d88a278c80d3bb3.js" defer></script><script src="main.080b481134a5258a.js" type="module"></script>
+
 
 </body></html>
